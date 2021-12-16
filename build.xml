@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<project name="log2j" default="jar">
+	<property name="buildDir" value="./build"/>
+
+    <target name="jar">
+        <mkdir dir="${buildDir}/classes"/>
+        <javac srcdir="./src"
+               destdir="${buildDir}/classes"
+               includes="**/*.java"
+               debug="off"
+               verbose="off"
+               source="1.8"
+               target="1.8"/>
+
+        <delete file="log2j.jar"/>
+        <jar jarfile="log2j.jar"
+             basedir="${buildDir}/classes"
+             includes="**/*.class"/>
+    </target>
+
+	<target name="cleanClasses">
+        <delete dir="build"/>
+        <mkdir dir="build"/>
+	</target>
+</project>
