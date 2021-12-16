@@ -5,8 +5,8 @@ import java.util.logging.Logger;
 
 /**
  * A simple replacement for log4j to resolve dependency issues.
- * Redirects everything hard wired to java.util.logging.
- * It's does not cover 100% of the origianl APIs! Jet it covers enough to run + compile most projects, extend on demand.
+ * Redirects everything hardwired to java.util.logging.
+ * It does not cover 100% of the original APIs! Jet it covers enough to run + compile most projects, extend on demand.
  * @author Paul Palaszewski
  * @since 15.09.2015
  */
